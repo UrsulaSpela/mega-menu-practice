@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1240px;
+  min-height: 150vh;
+  margin: 0 auto;
+  background: gray;
+}
+/*-- NAVIGATION MEGA MENU ----*/
+nav {
+  position: sticky;
+  top: 0;
+}
+.menu-container ul {
+  display: flex;
+  background: white;
+}
+li {
+  list-style: none;
+}
+.sub-menu-column ul {
+  display: block;
+  background: yellow;
+  text-align: left;
+  padding: 20px;
+}
