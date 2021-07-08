@@ -11,17 +11,51 @@
 nav {
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 .menu-container ul {
   display: flex;
-  background: white;
+  background: #2e9aa6;
 }
 li {
   list-style: none;
 }
+a {
+  color: #2e5955;
+  text-decoration: none;
+  margin: 5px 0;
+}
+a:hover {
+  color: #f2e2ce;
+}
+.main-menu-category {
+  padding: 20px;
+  position: relative;
+}
+.sub-menu-category {
+  display: flex;
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
 .sub-menu-column ul {
   display: block;
-  background: yellow;
+  background: #8abfbf;
   text-align: left;
-  padding: 20px;
+  padding: 50px;
+}
+.main-menu-category:hover .sub-menu-category {
+  display: flex;
+}
+/*---- BANNER SLIDER ---*/
+.banner-slider-container img {
+  width: 1000px;
+  height: 350px;
+  position: relative;
+  left: 120px;
+}
+.banner-slider-container {
+  display: flex;
+  overflow: hidden;
+  z-index: 1;
 }
